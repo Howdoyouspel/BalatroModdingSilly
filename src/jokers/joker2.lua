@@ -17,18 +17,18 @@ SMODS.Joker {
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
-                card.ability.extra.dollars
+                card.ability.extra.dollars,
                 card.ability.extra.scalar
             }
         }
     end,
     calculate = function(self, card, context)
-        if context.individual and context.cardarea = G.play and context.other_card:is_suit('Clubs') then
+        if context.individual and context.cardarea == G.play and context.other_card:is_suit('Clubs') then
             SMODS.calculate_effect({dollars = card.ability.extra.dollars})
             SMODS.scale_card(card, {
                 ref_table = card.ability.extra,
                 ref_value = 'dollars',
-                scalar_value = "scalar"
+                scalar_value = "scalar",
                 message_colour = G.C.ATTENTION
             })
         end
