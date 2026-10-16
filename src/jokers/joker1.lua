@@ -1,4 +1,4 @@
-SMODS.joker {
+SMODS.Joker {
     key = "joker1",
     atlas = "placeholders",
     pos = {
