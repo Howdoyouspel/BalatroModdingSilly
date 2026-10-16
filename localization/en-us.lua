@@ -10,10 +10,10 @@ return {
             j_xmp_joker2 = {
                 name = 'The Button'
                 text = {
-                    'Gives {C:money}$+#1#{} for each',
+                    'Gives {C:money}$#1#{} for each',
                     'The PanPan sold',{
-                        'Money scales by {C:attention}#2#{}',
-                        'for each The PanPan sold'
+                        'Money scales by {C:attention}#2#',
+                        'for each The PanPan sold',
                         '{C:inactive}(Resets at the end of round)'
                     }
 

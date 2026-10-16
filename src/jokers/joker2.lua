@@ -8,8 +8,8 @@ SMODS.Joker {
     config = {
         extra = {
             dollars = 1,
-            reset = 1
-
+            reset = 1,
+            scalar = 1
         }
     },
     rarity = 2,
@@ -23,7 +23,7 @@ SMODS.Joker {
         }
     end,
     calculate = function(self, card, context)
-        if context.selling_card and context.joker1 and not context.blueprint then
+        if context.idividual and context.cardarea = G.play and context.other_card:is_suit('Clubs') then
             SMODS.calculate_effect({dollars = card.ability.extra.dollars})
             SMODS.scale_card(card, {
                 ref_table = card.ability.extra,
