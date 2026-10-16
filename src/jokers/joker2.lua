@@ -23,7 +23,7 @@ SMODS.Joker {
         }
     end,
     calculate = function(self, card, context)
-        if context.idividual and context.cardarea = G.play and context.other_card:is_suit('Clubs') then
+        if context.individual and context.cardarea = G.play and context.other_card:is_suit('Clubs') then
             SMODS.calculate_effect({dollars = card.ability.extra.dollars})
             SMODS.scale_card(card, {
                 ref_table = card.ability.extra,
