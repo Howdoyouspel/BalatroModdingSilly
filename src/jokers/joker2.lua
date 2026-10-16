@@ -1,0 +1,42 @@
+SMODS.Joker {
+    key = "joker2",
+    atlas = "placeholders",
+    pos = {
+        x = 2,
+        y = 0
+    },
+    config = {
+        extra = {
+            dollars = 1,
+            reset = 1
+
+        }
+    },
+    rarity = 2,
+    cost = 6,
+    loc_vars = function(self, info_queue, card)
+        return {
+            vars = {
+                card.ability.extra.dollars
+                card.ability.extra.scalar
+            }
+        }
+    end,
+    calculate = function(self, card, context)
+        if context.selling_card and context.joker1 and not context.blueprint then
+            SMODS.calculate_effect({dollars = card.ability.extra.dollars})
+            SMODS.scale_card(card, {
+                ref_table = card.ability.extra,
+                ref_value = 'dollars',
+                scalar_value = "scalar"
+                message_colour = G.C.ATTENTION
+            })
+        end
+        if context.end_of_round and not context.blueprint and not context.repetition and not context.individual then
+            card.ability.extra.dollars = card.ability.extra.reset
+            return{
+                message = localize('k_reset')
+            }
+        end
+    end
+}
