@@ -28,7 +28,7 @@ return {
                     'This Joker gains {X:mult,C:white}X#2#{} Mult for',
                     'scored hands that contain',
                     '3 {C:attention}Stone Cards',
-                    '{C:inactive}(currently {X:mult,C:white}X#1#{}{C:inactive} Mult)'
+                    '{C:inactive}(Currently {X:mult,C:white}X#1#{}{C:inactive} Mult)'
                 },
 
                 }
