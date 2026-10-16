@@ -6,7 +6,7 @@ SMODS.joker {
         y = 0
     },
     config = {
-        extra{
+        extra = {
             chips = 100
         }
     },
