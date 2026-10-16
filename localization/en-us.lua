@@ -17,7 +17,19 @@ return {
                         'Money scales by {C:attention}#2#',
                         'for each The PanPan sold',
                         '{C:inactive}(Resets at the end of round)'
-                    }
+                    },
+                    {'{C:inactive}W.I.P'}
+
+                }
+            },
+            j_xmpl_joker3 = {
+                name = "The Bonzu",
+                text = {{
+                    'This Joker gains {X:mult,C:white}X#2#{} Mult for',
+                    'scored hands that contain',
+                    '3 {C:attention}Stone Cards',
+                    '{C:inactive}(currently {X:mult,C:white}X#1#{}{C:inactive} Mult)'
+                },
 
                 }
             }

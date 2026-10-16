@@ -2,8 +2,8 @@
     "id": "BalatroModdingSilly",
     "name": "Balatro Modding Silly",
     "author": ["Howdoyouspel","Panpan"],
-    "description": "A silly modding pack for Balatro.",
+    "description": "A silly modding pack for Balatro, made by Yours Truly, Howdoyouspel and Panpan.",
     "prefix": "xmpl",
     "main_file": "main.lua",
-    "version": "0.0.1"
+    "version": "0.0.2"
 }
