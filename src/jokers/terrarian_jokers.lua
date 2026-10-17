@@ -11,6 +11,7 @@ SMODS.Joker {
             chips = 2.5
         }
     },
+    pools = {['Terrarian'] = true}
     rarity = 1,
     cost = 3,
     loc_vars = function(self, info_queue, card)
@@ -43,6 +44,7 @@ SMODS.Joker {
             scalar = 1
         }
     },
+    pools = {['Terrarian'] = true}
     rarity = 2,
     cost = 6,
     loc_vars = function(self, info_queue, card)
@@ -85,6 +87,7 @@ SMODS.Joker {
             Xmult_Gain = 0.5
         }
     },
+    pools = {['Terrarian'] = true}
     rarity = 2,
     cost = 6,
     loc_vars = function(self, info_queue, card)

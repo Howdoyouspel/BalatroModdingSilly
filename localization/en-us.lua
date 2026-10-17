@@ -32,6 +32,19 @@ return {
                 },
 
                 }
+            },
+            Other = {
+                p_hdys_terrariaboost = {
+                    name = "Terrarian Pack"
+                    text = {
+                        'Choose {C:attention}#1# of up to',
+                        '{C:attention}#2# Terrarian Jokers'
+                    }
+                }
+            misc = {
+                dictionary = {
+                    k_hdys_terrpack = 'Terrarian'
+                }
             }
         }
     }
