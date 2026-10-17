@@ -1,5 +1,5 @@
 SMODS.ObjectType({
-    key = "Terrarian",
+    key = "hdys_Terrarian",
     default = "j_joker",
     cards = {},
     inject = function(self)

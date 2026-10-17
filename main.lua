@@ -20,4 +20,9 @@ local boosters_src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/
 for _, file in ipairs(boosters_src) do
     assert(SMODS.load_file("src/boosters/" .. file))()
 end
+
+local consumes_src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/consumables")
+for _, file in ipairs(consumes_src) do
+    assert(SMODS.load_file("src/consumables/" .. file))()
+end
 --#endregion

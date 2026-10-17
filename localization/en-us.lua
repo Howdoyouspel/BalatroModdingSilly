@@ -32,6 +32,15 @@ return {
                 },
 
                 }
+            hdys_terraria =
+                c_hdys_terraria2 = {
+                    name = 'Terraria Test'
+                    text = {
+                        'this is a test',
+                        'if your seeing this',
+                        'congrats! it worked'
+                    }
+                }
             },
             Other = {
                 p_hdys_terrariaboost = {
