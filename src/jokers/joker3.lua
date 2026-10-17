@@ -8,10 +8,10 @@ SMODS.Joker {
     config = {
         extra = {
             Xmult = 1,
-            Xmult_Gain = 0.25
+            Xmult_Gain = 0.5
         }
     },
-    rarity = 3,
+    rarity = 2,
     cost = 10,
     loc_vars = function(self, info_queue, card)
         info_queue[#info_queue + 1] = G.P_CENTERS.m_stone
