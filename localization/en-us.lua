@@ -1,13 +1,13 @@
 return {
     descriptions = {
         Joker = {
-            j_xmpl_joker1 = {
+            j_hdys_Pan = {
                 name = 'The PanPan',
                 text = {
                     "{C:chips}+#1#{} chips"
                 }
             },
-            j_xmpl_joker2 = {
+            j_hdys_Button = {
                 name = 'The Button',
                 text = {
                     {
@@ -22,7 +22,7 @@ return {
 
                 }
             },
-            j_xmpl_joker3 = {
+            j_hdys_Bonzer = {
                 name = "The Bonzu",
                 text = {{
                     'This Joker gains {X:mult,C:white}X#2#{} Mult for',
