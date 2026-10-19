@@ -31,7 +31,15 @@ return {
                     '{C:inactive}(Currently {X:mult,C:white}X#1#{}{C:inactive} Mult)'
                 },
                 }
+            },
+            j_hdys_pancake = {
+                name = "Pancake"
+                text = {{
+                    '{C:chips}+#1#{} chips',
+                    '{C:inactive,s:0.5,E:1}What a delicious meal to start the morning!{}'
+                }}
             }
+
         },
         hdys_terrarcana = {
             c_hdys_terrarian2 = {
@@ -86,10 +94,12 @@ return {
             -- b_hdys_terrarcana_cards = 'Terrarcana', not needed
             -- k_hdys_terrarcana = 'Terrarcana',
             -- k_hdys_terrconsume = 'Terrarcana Pack',
-            k_hdys_terrpack = 'Terraria Pack'
+            k_hdys_terrpack = 'Terraria Pack',
+            k_hdys_pancake_rarity = 'Pancake'
         },
         labels = {
             -- hdys_terrarcana = 'Terraria'
+            hdys_pancake_rarity = 'Pancake'
         }
     }
 }
