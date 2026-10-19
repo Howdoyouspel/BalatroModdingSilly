@@ -30,31 +30,66 @@ return {
                     '3 {C:attention}Stone Cards',
                     '{C:inactive}(Currently {X:mult,C:white}X#1#{}{C:inactive} Mult)'
                 },
-
-                }
-            hdys_terraria =
-                c_hdys_terraria2 = {
-                    name = 'Terraria Test'
-                    text = {
-                        'this is a test',
-                        'if your seeing this',
-                        'congrats! it worked'
-                    }
-                }
-            },
-            Other = {
-                p_hdys_terrariaboost = {
-                    name = "Terrarian Pack"
-                    text = {
-                        'Choose {C:attention}#1# of up to',
-                        '{C:attention}#2# Terrarian Jokers'
-                    }
-                }
-            misc = {
-                dictionary = {
-                    k_hdys_terrpack = 'Terrarian'
                 }
             }
+        },
+        hdys_terrarcana = {
+            c_hdys_terrarian2 = {
+                name = 'Terraria Test',
+                text = {
+                    'this is a test',
+                    'if your seeing this',
+                    'congrats! it worked'
+                }
+            }
+        },
+        Spectral = {
+            c_hdys_DTPRsteven = {
+                name = 'Spectral Steven',
+                text = {
+                    'Creates a random',
+                    '{C:green} Terraria{} Joker'
+                }
+            }
+        },
+        Other = {
+            --[[
+            p_hdys_booster2 = {
+                    name = "Terrarcana Pack",
+                    text = {
+                        'Choose {C:attention}#1#{} of up to',
+                        '{C:attention}#2#{C:hdys_terrarcana} Terrarot{} cards'
+                    }
+            },
+            ]] -- not needed at the current moment
+            p_hdys_terrariaboost = {
+                name = "Terraria Pack",
+                text = {
+                    'Choose {C:attention}#1#{} of up to',
+                    '{C:attention}#2#{C:green} Terraria{} jokers'
+                }
+            },
+            undiscovered_hdys_terrarcana = {
+                name = 'Undiscovered Terrarcana',
+                text = {
+                    "Purchase or use",
+                    "this card in an",
+                    "unseeded run to",
+                    "learn what it does",
+                    }
+            },
+        },
+    },
+    misc = {
+        dictionary = {
+
+            -- b_hdys_terrarcana_cards = 'Terrarcana', not needed
+            -- k_hdys_terrarcana = 'Terrarcana',
+            -- k_hdys_terrconsume = 'Terrarcana Pack',
+            k_hdys_terrpack = 'Terraria Pack'
+        },
+        labels = {
+            -- hdys_terrarcana = 'Terraria'
         }
     }
 }

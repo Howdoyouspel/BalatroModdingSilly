@@ -14,7 +14,7 @@ SMODS.Atlas {
 local jokers_src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/jokers")
 for _, file in ipairs(jokers_src) do
     assert(SMODS.load_file("src/jokers/" .. file))()
-end,
+end
 
 local boosters_src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/boosters")
 for _, file in ipairs(boosters_src) do
@@ -25,4 +25,5 @@ local consumes_src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/
 for _, file in ipairs(consumes_src) do
     assert(SMODS.load_file("src/consumables/" .. file))()
 end
+
 --#endregion

@@ -1,4 +1,16 @@
 -- terrarian jokers, gotta keep ts organized yo
+SMODS.ObjectType({
+    key = "hdys_Terrarian",
+    default = "j_joker",
+    cards = {
+        ['j_vagabond'] = true,
+        ['j_even_steven'] = true,
+        ['j_square'] = true
+    },
+})
+
+
+
 SMODS.Joker {
     key = "Pan", -- the panpan
     atlas = "placeholders",
@@ -11,7 +23,7 @@ SMODS.Joker {
             chips = 2.5
         }
     },
-    pools = {['Terrarian'] = true}
+    pools = {['hdys_Terrarian'] = true},
     rarity = 1,
     cost = 3,
     loc_vars = function(self, info_queue, card)
@@ -44,7 +56,7 @@ SMODS.Joker {
             scalar = 1
         }
     },
-    pools = {['Terrarian'] = true}
+    pools = {['hdys_Terrarian'] = true},
     rarity = 2,
     cost = 6,
     loc_vars = function(self, info_queue, card)
@@ -87,7 +99,7 @@ SMODS.Joker {
             Xmult_Gain = 0.5
         }
     },
-    pools = {['Terrarian'] = true}
+    pools = {['hdys_Terrarian'] = true},
     rarity = 2,
     cost = 6,
     loc_vars = function(self, info_queue, card)
