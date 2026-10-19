@@ -18,26 +18,25 @@ SMODS.Joker {
         x = 0,
         y = 0
     },
-    config = {
-        extra = {
-            chips = 2.5
-        }
-    },
     pools = {['hdys_Terrarian'] = true},
     rarity = 1,
     cost = 3,
-    loc_vars = function(self, info_queue, card)
-        return {
-            vars = {
-                card.ability.extra.Xchips
-            }
-        }
-    end,
     calculate = function(self, card, context)
-        if context.joker_main then
-            return {
-                chips = card.ability.extra.Xchips
-            }
+        if context.setting_blind and #G.jokers.cards + G.GAME.joker_buffer < G.jokers.config.card_limit then
+            local jokers_to_create = math.min(2, G.jokers.config.card_limit - (#G.jokers.cards + G.GAME.joker_buffer))
+            G.GAME.joker_buffer = G.GAME.joker_buffer + jokers_to_create
+            G.E_MANAGER:add_event(Event({
+                func = function()
+                    for i = 1, jokers_to_create do
+                        local card = create_card("Joker", G.jokers, nil, nil, nil, nil, 'j_hdys_pancake')
+                        card:add_to_deck()
+                        G.jokers:emplace(card)
+                        card:start_materialize()
+                        G.GAME.joker_buffer = 0
+                    end
+                    return true
+                end
+            }))
         end
     end
 }

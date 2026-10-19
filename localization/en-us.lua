@@ -4,7 +4,9 @@ return {
             j_hdys_Pan = {
                 name = 'The PanPan',
                 text = {
-                    "{C:chips}+#1#{} chips"
+                    "When {C:attention}Blind{} is selected",
+                    "Spawn {C:attention}2{} {C:hdys_pancake_rarity}Pancake Jokers{}",
+                    "{C:inactive}(Must have room)"
                 }
             },
             j_hdys_Button = {
@@ -33,10 +35,17 @@ return {
                 }
             },
             j_hdys_pancake = {
-                name = "Pancake"
+                name = "Pancake",
                 text = {{
                     '{C:chips}+#1#{} chips',
-                    '{C:inactive,s:0.5,E:1}What a delicious meal to start the morning!{}'
+                    '{C:inactive,s:0.75,E:1}What a delicious meal to start the morning!{}'
+                }}
+            },
+            j_hdys_butterpan = {
+                name = "Buttered Pancake",
+                text = {{
+                    '{X:mult,C:white}X#1#{} Mult',
+                    '{C:inactive,s:0.75,E:1}"Playboi Carti always puts butter on his pancake!"{}'
                 }}
             }
 
