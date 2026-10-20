@@ -39,12 +39,12 @@ SMODS.Joker {
                 func = function()
                     G.GAME.joker_buffer = 0
                     card:juice_up(0.8,0.8)
-                    sliced_card:start_dissolve({HEX('57ecab'), nil, 1.6})
+                    sliced_card:start_dissolve({HEX("57ecab")}, nil, 1.6)
                     play_sound('slice1',0.96 + math.random()*0.08)
                     return true
                 end,
             }))
-            local card = create_card("Joker", G.jokers, nil, nil, nil, nil, 'j_hdys_pancake')
+            local card = create_card("Joker", G.jokers, nil, nil, nil, nil, 'j_hdys_butterpan')
             card:add_to_deck()
             G.jokers:emplace(card)
         end

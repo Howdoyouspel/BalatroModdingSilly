@@ -52,7 +52,7 @@ return {
                 name = "XXX_Slay3r_XXX",
                 text = {{
                     'When {C:attention}Blind{} is selected,',
-                    'destroy joker to the left',
+                    'destroy Joker to the right',
                     'and create one {C:hdys_pancake_rarity}Buttered Pancake{} Joker'
                 }}
             }
