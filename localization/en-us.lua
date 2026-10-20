@@ -5,7 +5,7 @@ return {
                 name = 'The PanPan',
                 text = {
                     "When {C:attention}Blind{} is selected",
-                    "Spawn {C:attention}2{} {C:hdys_pancake_rarity}Pancake Jokers{}",
+                    "Spawn {C:attention}2{} {C:hdys_pancake_rarity}Pancake{} Jokers",
                     "{C:inactive}(Must have room)"
                 }
             },
@@ -46,6 +46,14 @@ return {
                 text = {{
                     '{X:mult,C:white}X#1#{} Mult',
                     '{C:inactive,s:0.75,E:1}"Playboi Carti always puts butter on his pancake!"{}'
+                }}
+            },
+            j_hdys_slayer = {
+                name = "XXX_Slay3r_XXX"
+                text = {{
+                    'When {C:attention}Blind{} is selected,',
+                    'destroy joker to the left',
+                    'and create one {C:hdys_pancake_rarity}Buttered Pancake{} Joker'
                 }}
             }
 

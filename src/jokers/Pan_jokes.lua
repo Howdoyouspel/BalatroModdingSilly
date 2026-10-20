@@ -15,13 +15,13 @@ SMODS.Rarity({
 })
 
 SMODS.Joker {
-    key = 'Slayer', -- slayer idk where else to put this joker lol despite it not being in this pool
+    key = 'slayer', -- slayer idk where else to put this joker lol despite it not being in this pool
     atlas = 'placeholders',
     pos = {
         x = 2,
         y = 0
     },
-    rarity = 2,
+    rarity = 3,
     cost = 6,
     calculate = function (self, card, context)
         local my_pos = nil
