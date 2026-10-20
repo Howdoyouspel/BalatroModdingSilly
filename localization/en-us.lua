@@ -49,7 +49,7 @@ return {
                 }}
             },
             j_hdys_slayer = {
-                name = "XXX_Slay3r_XXX"
+                name = "XXX_Slay3r_XXX",
                 text = {{
                     'When {C:attention}Blind{} is selected,',
                     'destroy joker to the left',
