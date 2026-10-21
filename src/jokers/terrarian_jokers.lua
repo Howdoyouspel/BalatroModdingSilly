@@ -9,7 +9,32 @@ SMODS.ObjectType({
     },
 })
 
-
+SMODS.Joker {
+    key = "boulder", -- the boulder
+    atlas = 'placeholders',
+    pos = {
+        x = 0,
+        y = 0
+    },
+    rarity = 3, 
+    config = {
+        extra = {
+            xmult = 3.33
+        },
+    },
+    loc_vars = {
+        vars = {
+            card.ability.extra.xmult 
+        }
+    },
+    calculate = function(self, card, context)
+        if context.scoring_hand and not context.blueprint then
+            for i = 1 in #context.scoring_hand do
+                if SMODS.has_enhancement(context.scoring_hand[i], 'm_stone') then
+                    return {card.ability.extra.xmult}
+            end
+        end
+}
 
 SMODS.Joker {
     key = "Pan", -- the panpan

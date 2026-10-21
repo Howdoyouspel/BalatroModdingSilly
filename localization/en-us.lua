@@ -55,6 +55,13 @@ return {
                     'destroy Joker to the right',
                     'and create one {C:hdys_pancake_rarity}Buttered Pancake{} Joker'
                 }}
+            },
+            j_hdys_boulder = {
+                name = 'The Boulder',
+                text = {{
+                    'Played {C:attention} Stone Cards{}',
+                    'give {X:mult,C:white}X#1#'
+                }}
             }
 
         },
