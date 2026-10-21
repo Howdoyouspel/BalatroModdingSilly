@@ -19,21 +19,24 @@ SMODS.Joker {
     rarity = 3, 
     config = {
         extra = {
-            xmult = 3.33
+            Xmult = 3.33
         },
     },
-    loc_vars = {
-        vars = {
-            card.ability.extra.xmult 
+    loc_vars = function(self, info_queue, card)
+        return {
+            vars = {
+                card.ability.extra.Xmult 
+            }
         }
-    },
+    end,
     calculate = function(self, card, context)
-        if context.scoring_hand and not context.blueprint then
-            for i = 1 in #context.scoring_hand do
-                if SMODS.has_enhancement(context.scoring_hand[i], 'm_stone') then
-                    return {card.ability.extra.xmult}
+        if context.individual and context.cardarea == G.play then
+            local stone = context.other_card
+            if SMODS.has_enhancement(stone,"m_stone") then
+                return {Xmult = card.ability.extra.Xmult}
             end
         end
+    end
 }
 
 SMODS.Joker {
