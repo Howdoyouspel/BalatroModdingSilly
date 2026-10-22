@@ -104,6 +104,14 @@ return {
                 }
             }
         },
+        Enhanced = {
+            m_hdys_volcanic = {
+                name = 'Volcanic Card',
+                text = {
+                    'Copies ability of the card to its right',
+                }
+            }
+        },
         Other = {
             --[[
             p_hdys_booster2 = {

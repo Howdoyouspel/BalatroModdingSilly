@@ -21,4 +21,25 @@ SMODS.Consumable {
     -- also idk what the localize thing does tbh im just copying what works
 }
 
-
+-- volcanic enhancement
+SMODS.Enhancement {
+    key = 'volcanic',
+    atlas = 'placeholders',
+    pos = {
+        x = 0,
+        y = 0,
+    },
+    config = {},
+    calculate = function (self, card, context)
+        local other_card = nil
+        for i = 1, #context.cardarea do
+            if context.cardarea[i] == card then other_card = context.scoring_hand[i+1] end
+        end   
+        print(other_card)
+        local ret = SMODS.blueprint_effect(card, other_card, context)
+        if ret then
+            ret.colour = G.C.BLUE
+        end
+        return ret
+    end
+}
