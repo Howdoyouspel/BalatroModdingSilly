@@ -64,8 +64,6 @@ return {
                     '{C:inactive,s:0.75,E:1}"Lets Rock and Roll!'
                 }}
             }
-            }
-
         },
         hdys_terrarcana = {
             c_hdys_terrarian2 = {
@@ -83,6 +81,16 @@ return {
                 text = {
                     'Creates a random',
                     '{C:green} Terraria{} Joker'
+                }
+            }
+        },
+        Back = {
+            b_hdys_potential = {
+                name = "The Potential Deck",
+                text = {
+                    'Start with an Eternal Rental {C:attention}The Order',
+                    '{C:inactive,s:0.75,E:1}"If only The Order was disabled!"'
+                    
                 }
             }
         },
