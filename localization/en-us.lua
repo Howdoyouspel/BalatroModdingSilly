@@ -75,6 +75,16 @@ return {
                 }
             }
         },
+        Tarot ={
+            c_hdys_mason = {
+                name = "Stone Mason",
+                text = {
+                    'Turns {C:attention}5{} selected cards',
+                    'into {C:attention}Stone Cards'
+                
+                }
+            }
+        },
         Spectral = {
             c_hdys_DTPRsteven = {
                 name = 'Spectral Steven',

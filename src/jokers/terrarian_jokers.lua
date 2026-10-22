@@ -29,6 +29,8 @@ SMODS.Joker {
             }
         }
     end,
+    -- TODO: 
+    -- Have this joker destroy a random played card, either that or you make it destroy the first or the last scored hand
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play then
             local stone = context.other_card
